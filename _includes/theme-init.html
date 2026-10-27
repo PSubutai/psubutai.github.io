@@ -1,0 +1,19 @@
+<script>
+  (function () {
+    var html = document.documentElement;
+    var themes = ["light", "dark"];
+    var palettes = ["amber", "steel", "bank", "mono"];
+    try {
+      var t = localStorage.getItem("theme");
+      html.setAttribute("data-theme", themes.indexOf(t) !== -1 ? t : "dark");
+    } catch (e) {
+      html.setAttribute("data-theme", "dark");
+    }
+    try {
+      var p = localStorage.getItem("palette");
+      html.setAttribute("data-palette", palettes.indexOf(p) !== -1 ? p : "amber");
+    } catch (e) {
+      html.setAttribute("data-palette", "amber");
+    }
+  })();
+</script>
