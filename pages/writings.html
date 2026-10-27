@@ -1,0 +1,43 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writings — 102790.xyz</title>
+  {% include theme-init.html %}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+
+  <section class="page-head">
+    <p class="type-line">$ cat writings.txt<span class="cursor">&nbsp;</span></p>
+    <h1>Writings</h1>
+    <p>My thoughts, ideas, and other musings. Not to be taken seriously.</p>
+  </section>
+
+  <div class="table-wrap">
+    <table class="entries entries-posts">
+      <thead><tr><th>Date</th><th>Entry</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026.10.26</td>
+          <td><button class="entry-toggle" type="button" aria-expanded="false" aria-controls="post-just-a-placeholder"><span class="entry-title">Just a placeholder for now</span><span class="arrow" aria-hidden="true">▾</span></button></td>
+        </tr>
+        <tr class="entry-body" id="post-just-a-placeholder" hidden>
+          <td></td>
+          <td>
+            <p>This is just a placeholder entry until I am ready to start writing down some of my random ramblings.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  {% include footer.html %}
+  <script src="{{ '/assets/theme.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/entries.js' | relative_url }}" defer></script>
+</body>
+</html>
